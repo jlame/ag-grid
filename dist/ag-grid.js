@@ -11898,9 +11898,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var shiftKeyPressed = event.shiftKey;
 	        // we do not allow selecting groups by clicking (as the click here expands the group)
 	        // so return if it's a group row
-	        if (this.rowNode.group) {
+	        /* if (this.rowNode.group) {
 	            return;
-	        }
+	        } */
 	        // we also don't allow selection of floating rows
 	        if (this.rowNode.floating) {
 	            return;
