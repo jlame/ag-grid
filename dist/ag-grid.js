@@ -9506,9 +9506,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 	    };
 	    RowNode.prototype.selectThisNode = function (newValue) {
-	        if (this.selected === newValue) {
+	        /* if (this.selected === newValue) {
 	            return false;
-	        }
+	        } */
 	        this.selected = newValue;
 	        if (this.eventService) {
 	            this.dispatchLocalEvent(RowNode.EVENT_ROW_SELECTED);
