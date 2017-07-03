@@ -11129,9 +11129,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 	    };
 	    RowNode.prototype.selectThisNode = function (newValue) {
-	        if (this.selected === newValue) {
+	    	// in order to launch onSelectionChange when selecting same line but different col
+	        /* if (this.selected === newValue) {
 	            return false;
-	        }
+	        } */
 	        this.selected = newValue;
 	        if (this.eventService) {
 	            this.dispatchLocalEvent(RowNode.EVENT_ROW_SELECTED);
